@@ -74,4 +74,19 @@ a{
       transform: translate3d(0, 0, 0) translateZ(0);
     }
   }
+  .dice{
+    width: 150px;
+    height: 150px;
+    background-color: #ffffff;
+    border: 1px solid black;
+  }
+  .dot{
+    height: 20px;
+    width: 20px;
+    background-color: #000000;
+    border-radius: 50%;
+  }
+  .my-grid{
+     place-items: center;
+  }
   
