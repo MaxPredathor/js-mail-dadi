@@ -86,8 +86,28 @@ a{
     width: 20px;
     background-color: #000000;
     border-radius: 50%;
+    position: absolute;
   }
-  .my-grid{
-     place-items: center;
+  .dot-center{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
+  .dot1{
+    left: 20px;
+    top: 20px;
+  }
+  .dot2{
+    top: 20px;
+    right: 20px;
+  }
+  .dot3{
+    bottom: 20px;
+    left: 20px;
+  }
+  .dot4{
+    bottom: 20px;
+    right: 20px;
+  }
+
   

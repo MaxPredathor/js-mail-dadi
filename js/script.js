@@ -37,6 +37,7 @@ buttonDice.addEventListener('click', function(){
     const computerNumber = getRandomInteger(1, 6);
     let color = '';
     
+    
 
     if(userNumber === computerNumber){
         console.log('Tie');
@@ -50,13 +51,13 @@ buttonDice.addEventListener('click', function(){
         matchStatus.classList.remove('text-warning','text-success','text-danger');
         color = 'text-success';
         matchStatus.classList.add(color);
-        matchStatus.innerHTML = 'Won';
+        matchStatus.innerHTML = 'You Won!';
     } else{
         console.log('You Lost!');
         matchStatus.classList.remove('text-warning','text-success','text-danger');
         color = 'text-danger';
         matchStatus.classList.add(color);
-        matchStatus.innerHTML = 'Lost'; 
+        matchStatus.innerHTML = 'You Lost!'; 
     }
     
     
