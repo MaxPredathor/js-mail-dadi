@@ -2,6 +2,18 @@
     width: 100%;
     height: 100vh;
 }
+.my-bg{
+    background-image: url(/img/wave-haikei.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.my-bg-2{
+    background-image: url(/img/blob-haikei.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 a{
     text-decoration: none;
 }

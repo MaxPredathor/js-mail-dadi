@@ -1,4 +1,5 @@
 const button = document.querySelector('.bn54');
+const myBody = document.getElementById('myBody');
 
 button.addEventListener('click', function(){
 
@@ -20,7 +21,9 @@ button.addEventListener('click', function(){
         document.getElementById("invalidEmail").innerHTML=`
         <p class="fs-2 fw-bold mt-4 text-center text-dark bg-danger">La tua E-mail non è valida</p>
         `
-    }   
+    }
+    myBody.classList.remove('my-bg');
+    myBody.classList.add('my-bg-2');
 });
 
 const diceOutput = document.getElementById('diceOutput');
