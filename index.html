@@ -10,16 +10,25 @@
     <body>
         <div class="wrapper">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-auto">
-                        <div>
+                <div id="inputDisplay" class="row">
+                    <div class="col-12">
+                        <div class="d-flex align-items-center justify-content-center flex-column">
                             <label for="e-mail"><h2>Inserisci la tua E-mail per accedere al gioco</h2></label> <br>
                             <input class="my-3" id="e-mail" type="text" placeholder="E-mail">
-                            <a href="/">
-                                <button class="bn54">
-                                  <span class="bn54span">Button</span>
+                            <a href="#">
+                                <button type="button" class="bn54">
+                                  <span class="bn54span">Conferma</span>
                                 </button>
                             </a>
+                            <div id="invalidEmail"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="displayN" class="row d-none">
+                    <div class="col-12 d-flex justify-content-center align-items-center">
+                        <div>
+                            <h1 class="text-success">Welcome To the Dice Game</h1>
+                            div*2
                         </div>
                     </div>
                 </div>
