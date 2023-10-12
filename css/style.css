@@ -79,6 +79,7 @@ a{
     height: 150px;
     background-color: #ffffff;
     border: 1px solid black;
+    margin: 10px;
   }
   .dot{
     height: 20px;

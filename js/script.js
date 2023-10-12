@@ -23,21 +23,45 @@ button.addEventListener('click', function(){
     }   
 });
 
+const diceOutput = document.getElementById('diceOutput');
+const matchStatus = document.createElement('p');
+diceOutput.append(matchStatus);
+matchStatus.classList.add('fw-bold','fs-3');
+
+
+
 const buttonDice = document.getElementById('dice');
 buttonDice.addEventListener('click', function(){
 
     const userNumber = getRandomInteger(1, 6);
     const computerNumber = getRandomInteger(1, 6);
+    let color = '';
+    
 
     if(userNumber === computerNumber){
-        console.log('Tie')
+        console.log('Tie');
+        matchStatus.innerHTML = 'Tie';
+        matchStatus.classList.remove('text-warning','text-success','text-danger');
+        color = 'text-warning';
+        matchStatus.classList.add(color);  
     } else if(userNumber > computerNumber){
         console.log('You Won!');
+        console.log(userNumber);
+        matchStatus.classList.remove('text-warning','text-success','text-danger');
+        color = 'text-success';
+        matchStatus.classList.add(color);
+        matchStatus.innerHTML = 'Won';
     } else{
-        console.log('You Lost!')
+        console.log('You Lost!');
+        matchStatus.classList.remove('text-warning','text-success','text-danger');
+        color = 'text-danger';
+        matchStatus.classList.add(color);
+        matchStatus.innerHTML = 'Lost'; 
     }
-
+    
+    
 });
+
 
 function getRandomInteger(min, max) {   
     return Math.floor(Math.random() * (max - min + 1) ) + min; }
